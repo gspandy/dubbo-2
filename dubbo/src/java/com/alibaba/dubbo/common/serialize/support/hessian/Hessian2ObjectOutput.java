@@ -18,7 +18,7 @@ package com.alibaba.dubbo.common.serialize.support.hessian;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.alibaba.com.caucho.hessian.io.Hessian2Output;
+import com.caucho.hessian.io.Hessian2Output;
 import com.alibaba.dubbo.common.serialize.ObjectOutput;
 
 /**
