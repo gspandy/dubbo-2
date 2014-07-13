@@ -10,14 +10,6 @@
                     <id>oschina-repository</id>
                     <url>http://maven.oschina.net/content/groups/public</url>
                 </repository>
-                <!--<repository>-->
-                    <!--<id>apache-repository</id>-->
-                    <!--<url>http://repo.maven.apache.org/maven2</url>-->
-                <!--</repository>-->
-                <!--<repository>-->
-                    <!--<id>jboss-repository</id>-->
-                    <!--<url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>-->
-                <!--</repository>-->
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
