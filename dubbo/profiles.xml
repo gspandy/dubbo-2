@@ -7,7 +7,7 @@
             <id>dubbo</id>
             <repositories>
                 <repository>
-                    <id>oschina-repository</id>
+                    <id>oschina-mvn-repository</id>
                     <url>http://maven.oschina.net/content/groups/public</url>
                 </repository>
             </repositories>
