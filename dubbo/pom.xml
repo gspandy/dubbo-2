@@ -17,6 +17,32 @@
         <name>Alibaba</name>
         <url>http://www.alibaba.com</url>
     </organization>
+
+    <!-- 仓库 -->
+    <repositories>
+        <repository>
+            <id>oschina-mvn-repository</id>
+            <url>http://maven.oschina.net/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>dubbo-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>oschina-plugin-repository</id>
+            <url>http://maven.oschina.net/content/groups/public</url>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!-- 构建 -->
     <build>
         <sourceDirectory>src/java</sourceDirectory>
         <testSourceDirectory>src/test</testSourceDirectory>
@@ -62,6 +88,8 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- 包依赖 -->
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
