@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.alibaba</groupId>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.alibaba</groupId>
 	<artifactId>dubbo-monitor</artifactId>
 	<version>2.4.11</version>
 	<packaging>war</packaging>
@@ -31,10 +31,10 @@
     </pluginRepositories>
 
     <!-- 构建 -->
-	<build>
-		<finalName>dubbo-monitor</finalName>
-		<sourceDirectory>src</sourceDirectory>
-		<outputDirectory>webapp/WEB-INF/classes</outputDirectory>
+    <build>
+        <finalName>dubbo-monitor</finalName>
+        <sourceDirectory>src</sourceDirectory>
+        <outputDirectory>webapp/WEB-INF/classes</outputDirectory>
         <resources>
             <resource>
                 <directory>src</directory>
@@ -46,27 +46,27 @@
                 </excludes>
             </resource>
         </resources>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
-				<configuration>
-					<warSourceDirectory>webapp</warSourceDirectory>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+                <configuration>
+                    <warSourceDirectory>webapp</warSourceDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <!-- 包依赖 -->
 	<dependencies>
@@ -75,10 +75,10 @@
 			<artifactId>dubbo</artifactId>
 			<version>2.4.11</version>
 		</dependency>
-		<dependency>
-			<groupId>com.alibaba.citrus</groupId>
-			<artifactId>citrus-webx-all</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.alibaba.citrus</groupId>-->
+			<!--<artifactId>citrus-webx-all</artifactId>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
