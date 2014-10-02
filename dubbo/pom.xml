@@ -17,6 +17,12 @@
         <name>Alibaba</name>
         <url>http://www.alibaba.com</url>
     </organization>
+    <developers>
+        <developer>
+            <name>Linpn</name>
+            <email>lpn520@gmail.com</email>
+        </developer>
+    </developers>
 
     <!-- 仓库 -->
     <repositories>
