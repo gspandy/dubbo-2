@@ -22,7 +22,7 @@ public class ZkclientZookeeperClient extends AbstractZookeeperClient<IZkChildLis
 
 	public ZkclientZookeeperClient(URL url) {
 		super(url);
-		int timeout = url.getParameter("timeout", 1000);
+		int timeout = url.getParameter("timeout", 30000);
 
 		client = new ZkClient(url.getBackupAddress(), timeout, timeout);
 		client.subscribeStateChanges(new IZkStateListener() {
