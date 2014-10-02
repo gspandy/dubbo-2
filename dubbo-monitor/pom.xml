@@ -6,6 +6,14 @@
     <version>2.4.11</version>
     <packaging>war</packaging>
 
+    <url>https://github.com/lpn520/dubbo.git</url>
+    <developers>
+        <developer>
+            <name>Linpn</name>
+            <email>lpn520@gmail.com</email>
+        </developer>
+    </developers>
+
     <!-- 仓库 -->
     <repositories>
         <repository>
