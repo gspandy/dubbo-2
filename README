@@ -3,3 +3,21 @@ Merge branch 'dubbo-2.4.x' of https://github.com/alibaba/dubbo.git
 Changes:
 Maven code refactoring to make it can be successfully compiled and easier to understand.
 Optimized the dubbo-admin and dubbo-monitor.
+
+
+Maven References:
+
+    <repositories>
+        <repository>
+            <id>dubbo-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.4.11</version>
+        </dependency>
+    </dependencies>
