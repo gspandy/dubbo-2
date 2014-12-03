@@ -42,7 +42,7 @@
     <build>
         <finalName>dubbo-admin</finalName>
         <sourceDirectory>src</sourceDirectory>
-        <outputDirectory>Webapp1/WEB-INF/classes</outputDirectory>
+        <outputDirectory>Webapp/WEB-INF/classes</outputDirectory>
         <resources>
             <resource>
                 <directory>src</directory>
@@ -70,7 +70,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
-                    <warSourceDirectory>Webapp1</warSourceDirectory>
+                    <warSourceDirectory>Webapp</warSourceDirectory>
                 </configuration>
             </plugin>
         </plugins>
