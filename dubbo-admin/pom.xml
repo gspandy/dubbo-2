@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.alibaba</groupId>
     <artifactId>dubbo-admin</artifactId>
-    <version>2.4.11.LPN</version>
+    <version>2.4.11.lpn</version>
     <packaging>war</packaging>
     
     <url>https://github.com/lpn520/dubbo.git</url>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
-            <version>2.4.11.LPN</version>
+            <version>2.4.11.lpn</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.citrus</groupId>
