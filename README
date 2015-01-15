@@ -1,4 +1,5 @@
 Merge branch 'dubbo-2.4.x' of https://github.com/alibaba/dubbo.git
+Docs: http://alibaba.github.io/dubbo-doc-static/Home-zh.htm
 
 Changes:
 Maven code refactoring to make it can be successfully compiled and easier to understand.
