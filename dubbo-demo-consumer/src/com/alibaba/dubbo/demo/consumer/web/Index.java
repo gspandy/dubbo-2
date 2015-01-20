@@ -1,4 +1,4 @@
-package com.alibaba.dubbo.demo.consumer;
+package com.alibaba.dubbo.demo.consumer.web;
 
 import com.alibaba.dubbo.demo.provider.service.DemoService;
 import org.springframework.context.ApplicationContext;
