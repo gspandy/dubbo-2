@@ -1,3 +1,10 @@
 cd ../dubbo/
-mvn -DaltDeploymentRepository=snapshot-repo::default::file:../mvn-repository clean deploy
+call mvn -DaltDeploymentRepository=snapshot-repo::default::file:../mvn-repository clean deploy
+
+cd ../dubbo-demo-provider/
+call mvn -DaltDeploymentRepository=snapshot-repo::default::file:../mvn-repository clean deploy
+
+cd ../dubbo-demo-consumer/
+call mvn -DaltDeploymentRepository=snapshot-repo::default::file:../mvn-repository clean deploy
+
 @pause
