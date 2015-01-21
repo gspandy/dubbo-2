@@ -4,3 +4,9 @@ Docs: http://alibaba.github.io/dubbo-doc-static/Home-zh.htm
 Changes:
 Maven code refactoring to make it can be successfully compiled and easier to understand.
 Optimized the dubbo-admin and dubbo-monitor.
+
+Repository:
+<repository>
+    <id>dubbo-mvn-github</id>
+    <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+</repository>

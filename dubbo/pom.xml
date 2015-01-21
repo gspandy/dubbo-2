@@ -32,6 +32,10 @@
             <id>oschina-mvn-repository</id>
             <url>http://maven.oschina.net/content/groups/public</url>
         </repository>
+        <repository>
+            <id>dubbo-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
