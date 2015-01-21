@@ -6,7 +6,7 @@ Maven code refactoring to make it can be successfully compiled and easier to und
 Optimized the dubbo-admin and dubbo-monitor.
 
 Repository:
-    <repository>
-        <id>dubbo-mvn-github</id>
-        <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
-    </repository>
+<repository>
+    <id>dubbo-mvn-github</id>
+    <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+</repository>
