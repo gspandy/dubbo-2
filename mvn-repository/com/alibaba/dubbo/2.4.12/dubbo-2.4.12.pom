@@ -32,6 +32,10 @@
             <id>oschina-mvn-repository</id>
             <url>http://maven.oschina.net/content/groups/public</url>
         </repository>
+        <repository>
+            <id>dubbo-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -224,6 +228,23 @@
             <version>4.0.33</version>
         </dependency>
         <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.apache.mina</groupId>
             <artifactId>mina-core</artifactId>
             <version>1.1.7</version>
@@ -242,12 +263,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.1.36</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
             <version>1.4.1</version>
@@ -257,18 +272,6 @@
             <groupId>org.apache.bsf</groupId>
             <artifactId>bsf-api</artifactId>
             <version>3.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.4.6</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
-            <version>0.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
