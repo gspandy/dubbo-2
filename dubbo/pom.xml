@@ -20,7 +20,7 @@
 
     <!-- 属性 -->
     <properties>
-        <spring_version>2.5.6.SEC03</spring_version>
+        <spring_version>3.2.13.RELEASE</spring_version>
         <slf4j_version>1.6.2</slf4j_version>
         <log4j_version>1.2.16</log4j_version>
         <logback_version>1.0.6</logback_version>
@@ -209,7 +209,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring</artifactId>
+            <artifactId>spring-context</artifactId>
             <version>${spring_version}</version>
         </dependency>
         <dependency>
