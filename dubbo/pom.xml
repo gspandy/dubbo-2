@@ -18,14 +18,6 @@
         </license>
     </licenses>
 
-    <url>https://github.com/lpn520/dubbo.git</url>
-    <developers>
-        <developer>
-            <name>Linpn</name>
-            <email>lpn520@gmail.com</email>
-        </developer>
-    </developers>
-
     <!-- 属性 -->
     <properties>
         <spring_version>3.2.13.RELEASE</spring_version>
