@@ -6,8 +6,37 @@ Maven code refactoring to make it can be successfully compiled and easier to und
 Optimized the dubbo-admin and dubbo-monitor.
 Spring was upgraded to 3.2.13.RELEASE, and will not transitive dependencies.
 
-Repository:
-<repository>
-    <id>dubbo-mvn-github</id>
-    <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
-</repository>
+
+Quick Start:
+
+  Export remote service:
+
+    <bean id="barService" class="com.foo.BarServiceImpl" />
+    <dubbo:service interface="com.foo.BarService" ref="barService" />
+
+  Refer remote service:
+
+    <dubbo:reference id="barService" interface="com.foo.BarService" />
+    <bean id="barAction" class="com.foo.BarAction">
+        <property name="barService" ref="barService" />
+    </bean>
+
+For more, please refer to: http://dubbo.io
+
+
+在 pom.xml 中加入:
+
+<repositories>
+    <repository>
+        <id>dubbo-mvn-github</id>
+        <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.4.12</version>
+    </dependency>
+</dependencies>
