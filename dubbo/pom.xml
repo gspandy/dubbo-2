@@ -18,13 +18,6 @@
         </license>
     </licenses>
 
-    <!-- 属性 -->
-    <properties>
-        <spring_version>3.1.4.RELEASE</spring_version>
-        <slf4j_version>1.6.2</slf4j_version>
-        <logback_version>1.0.6</logback_version>
-    </properties>
-
     <!-- 仓库 -->
     <repositories>
         <repository>
@@ -209,13 +202,13 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${spring_version}</version>
+            <version>3.1.4.RELEASE</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>${spring_version}</version>
+            <version>3.1.4.RELEASE</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -241,7 +234,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.4</version>
+            <version>1.2.7</version>
         </dependency>
         <dependency>
             <groupId>com.caucho</groupId>
@@ -342,13 +335,13 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${slf4j_version}</version>
+            <version>1.6.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>${logback_version}</version>
+            <version>1.0.6</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
