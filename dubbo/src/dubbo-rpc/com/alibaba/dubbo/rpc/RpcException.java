@@ -15,40 +15,38 @@
  */
 package com.alibaba.dubbo.rpc;
 
+import com.alibaba.dubbo.common.logger.Logger;
+
 /**
  * RPC Exception. (API, Prototype, ThreadSafe)
- * 
- * @serial Don't change the class name and properties.
- * @since 1.0
- * @see com.alibaba.dubbo.rpc.Invoker#invoke(Invocation)
+ *
  * @author shawn.qianx
  * @author william.liangf
+ * @serial Don't change the class name and properties.
  * @export
+ * @see com.alibaba.dubbo.rpc.Invoker#invoke(Invocation)
+ * @since 1.0
  */
 public class RpcException extends RuntimeException {
 
-	private static final long serialVersionUID = 7815426752583648734L;
+    private static final long serialVersionUID = 7815426752583648734L;
 
     public static final int UNKNOWN_EXCEPTION = 0;
-    
+
     public static final int NETWORK_EXCEPTION = 1;
-    
+
     public static final int TIMEOUT_EXCEPTION = 2;
-    
+
     public static final int BIZ_EXCEPTION = 3;
-    
+
     public static final int FORBIDDEN_EXCEPTION = 4;
-    
+
     public static final int SERIALIZATION_EXCEPTION = 5;
-    
+
     private int code;
 
     public RpcException() {
         super();
-    }
-
-    public RpcException(String message, Throwable cause) {
-        super(message, cause);
     }
 
     public RpcException(String message) {
@@ -59,13 +57,17 @@ public class RpcException extends RuntimeException {
         super(cause);
     }
 
-    public RpcException(int code) {
-        super();
-        this.code = code;
+    public RpcException(String message, Throwable cause) {
+        super(message, cause);
     }
 
-    public RpcException(int code, String message, Throwable cause) {
+    public RpcException(String message, Throwable cause, Logger logger) {
         super(message, cause);
+        logger.error(message, cause);
+    }
+
+    public RpcException(int code) {
+        super();
         this.code = code;
     }
 
@@ -78,19 +80,30 @@ public class RpcException extends RuntimeException {
         super(cause);
         this.code = code;
     }
-    
+
+    public RpcException(int code, String message, Throwable cause) {
+        super(message, cause);
+        this.code = code;
+    }
+
+    public RpcException(int code, String message, Throwable cause, Logger logger) {
+        super(message, cause);
+        this.code = code;
+        logger.error(message, cause);
+    }
+
     public void setCode(int code) {
         this.code = code;
     }
-    
+
     public int getCode() {
         return code;
     }
-    
+
     public boolean isBiz() {
         return code == BIZ_EXCEPTION;
     }
-    
+
     public boolean isForbidded() {
         return code == FORBIDDEN_EXCEPTION;
     }
