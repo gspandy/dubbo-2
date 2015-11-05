@@ -64,7 +64,7 @@ public class RpcResult implements Result, Serializable {
 
     /**
      * @deprecated Replace to setValue()
-     * @see com.alibaba.dubbo.rpc.RpcResult#setValue()
+     * @see com.alibaba.dubbo.rpc.RpcResult#setResult(Object)
      */
     @Deprecated
     public void setResult(Object result) {
