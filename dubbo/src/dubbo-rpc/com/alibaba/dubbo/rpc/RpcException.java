@@ -15,8 +15,6 @@
  */
 package com.alibaba.dubbo.rpc;
 
-import com.alibaba.dubbo.common.logger.Logger;
-
 /**
  * RPC Exception. (API, Prototype, ThreadSafe)
  *
@@ -61,11 +59,6 @@ public class RpcException extends RuntimeException {
         super(message, cause);
     }
 
-    public RpcException(String message, Throwable cause, Logger logger) {
-        super(message, cause);
-        logger.error(message, cause);
-    }
-
     public RpcException(int code) {
         super();
         this.code = code;
@@ -84,12 +77,6 @@ public class RpcException extends RuntimeException {
     public RpcException(int code, String message, Throwable cause) {
         super(message, cause);
         this.code = code;
-    }
-
-    public RpcException(int code, String message, Throwable cause, Logger logger) {
-        super(message, cause);
-        this.code = code;
-        logger.error(message, cause);
     }
 
     public void setCode(int code) {
