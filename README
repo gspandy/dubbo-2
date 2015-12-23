@@ -3,8 +3,10 @@ Docs: http://alibaba.github.io/dubbo-doc-static/Home-zh.htm
 
 Changes:
 Maven code refactoring to make it can be successfully compiled and easier to understand.
-Optimized the dubbo-admin and dubbo-monitor.
-Spring was upgraded to 3.2.13.RELEASE, and will not transitive dependencies.
+Optimized the dubbo-admin and dubbo-monitor. Using the standard web structure.
+Removed the jar internal dependence of the Alibaba.
+Spring was upgraded to 3.2.15.RELEASE, and will not transitive dependencies.
+Only to update the pom version of dependency, no changes to a line of source code.
 
 
 Quick Start:
