@@ -16,6 +16,10 @@
             <id>dubbo-mvn-github</id>
             <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
         </repository>
+        <repository>
+            <id>jsplite-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/jsplite/master/mvn-repository</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -93,9 +97,20 @@
             <version>${project.version}</version>
 		</dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>3.2.15.RELEASE</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.github</groupId>
+            <artifactId>jsplite</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
             <scope>provided</scope>
         </dependency>
 	</dependencies>
