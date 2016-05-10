@@ -1,2 +1,1 @@
 zookeeper=com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistryFactory
-multicast=com.alibaba.dubbo.registry.multicast.MulticastRegistryFactory
