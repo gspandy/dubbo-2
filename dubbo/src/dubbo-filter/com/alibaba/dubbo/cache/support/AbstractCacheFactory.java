@@ -15,12 +15,12 @@
  */
 package com.alibaba.dubbo.cache.support;
 
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-
 import com.alibaba.dubbo.cache.Cache;
 import com.alibaba.dubbo.cache.CacheFactory;
 import com.alibaba.dubbo.common.URL;
+
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * AbstractCacheFactory
