@@ -1,2 +1,5 @@
 trace=com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter
 future=com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter
+cache=com.alibaba.dubbo.cache.filter.CacheFilter
+validation=com.alibaba.dubbo.validation.filter.ValidationFilter
+monitor=com.alibaba.dubbo.monitor.support.MonitorFilter

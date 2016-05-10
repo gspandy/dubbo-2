@@ -2,3 +2,4 @@ http=com.alibaba.dubbo.rpc.protocol.http.HttpProtocol
 injvm=com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol
 hessian=com.alibaba.dubbo.rpc.protocol.hessian.HessianProtocol
 thrift=com.alibaba.dubbo.rpc.protocol.thrift.ThriftProtocol
+registry=com.alibaba.dubbo.registry.integration.RegistryProtocol
