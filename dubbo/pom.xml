@@ -63,14 +63,15 @@
                         <configuration>
                             <sources>
                                 <source>${basedir}/src/dubbo-common</source>
-                                <source>${basedir}/src/dubbo-cluster</source>
                                 <source>${basedir}/src/dubbo-config</source>
-                                <source>${basedir}/src/dubbo-container</source>
-                                <source>${basedir}/src/dubbo-filter</source>
-                                <source>${basedir}/src/dubbo-monitor</source>
-                                <source>${basedir}/src/dubbo-registry</source>
-                                <source>${basedir}/src/dubbo-remoting</source>
+                                <source>${basedir}/src/dubbo-cluster</source>
                                 <source>${basedir}/src/dubbo-rpc</source>
+                                <source>${basedir}/src/dubbo-remoting</source>
+                                <source>${basedir}/src/dubbo-filter</source>
+                                <source>${basedir}/src/dubbo-container</source>
+                                <source>${basedir}/src/dubbo-registry</source>
+                                <source>${basedir}/src/dubbo-monitor</source>
+                                <source>${basedir}/src/dubbo-logreturn</source>
                             </sources>
                         </configuration>
                     </execution>
