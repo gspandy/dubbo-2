@@ -15,7 +15,8 @@
  */
 package com.alibaba.dubbo.common.serialize.support.hessian;
 
-import com.alibaba.com.caucho.hessian.io.SerializerFactory;
+// Linpn: 修改
+import com.caucho.hessian.io.SerializerFactory;
 
 public class Hessian2SerializerFactory extends SerializerFactory {
 
