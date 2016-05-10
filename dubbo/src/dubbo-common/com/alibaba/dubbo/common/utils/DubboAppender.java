@@ -49,7 +49,7 @@ public class DubboAppender extends ConsoleAppender {
 
     private Log parseLog(LoggingEvent event) {
         Log log = new Log();
-        log.setLogName(event.getLoggerName());
+        log.setLogName(event.getLogger().getName());
         log.setLogLevel(event.getLevel());
         log.setLogThread(event.getThreadName());
         log.setLogMessage(event.getMessage().toString());
