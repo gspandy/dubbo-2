@@ -15,24 +15,19 @@
  */
 package com.alibaba.dubbo.common.serialize;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import org.junit.Test;
-
-import com.alibaba.com.caucho.hessian.io.Hessian2Input;
-import com.alibaba.com.caucho.hessian.io.Hessian2Output;
 import com.alibaba.dubbo.common.io.Bytes;
 import com.alibaba.dubbo.common.serialize.support.dubbo.Builder;
 import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectInputStream;
 import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStream;
+import com.caucho.hessian.io.Hessian2Input;
+import com.caucho.hessian.io.Hessian2Output;
+import org.junit.Test;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author qian.lei

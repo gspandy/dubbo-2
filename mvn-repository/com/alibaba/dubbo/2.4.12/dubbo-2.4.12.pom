@@ -45,7 +45,7 @@
     <!-- 构建 -->
     <build>
         <sourceDirectory>src/dubbo-common</sourceDirectory>
-        <testSourceDirectory>src-test</testSourceDirectory>
+        <testSourceDirectory>src-test/dubbo-common</testSourceDirectory>
         <outputDirectory>target/classes</outputDirectory>
         <testOutputDirectory>target/test-classes</testOutputDirectory>
         <plugins>
@@ -148,8 +148,82 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>${basedir}/src-test</source>
+                                <source>${basedir}/src-test/dubbo-common</source>
+                                <source>${basedir}/src-test/dubbo-config</source>
+                                <source>${basedir}/src-test/dubbo-cluster</source>
+                                <source>${basedir}/src-test/dubbo-rpc</source>
+                                <source>${basedir}/src-test/dubbo-remoting</source>
+                                <source>${basedir}/src-test/dubbo-filter</source>
+                                <source>${basedir}/src-test/dubbo-container</source>
+                                <source>${basedir}/src-test/dubbo-registry</source>
+                                <source>${basedir}/src-test/dubbo-monitor</source>
+                                <source>${basedir}/src-test/dubbo-logreturn</source>
                             </sources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>add-test-resource</id>
+                        <phase>generate-test-resources</phase>
+                        <goals>
+                            <goal>add-test-resource</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-common</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-cluster</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-config</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-container</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-filter</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-monitor</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-registry</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-remoting</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src-test/dubbo-rpc</directory>
+                                    <excludes>
+                                        <exclude>**/*.java</exclude>
+                                    </excludes>
+                                </resource>
+                            </resources>
                         </configuration>
                     </execution>
                 </executions>
@@ -215,7 +289,12 @@
         <dependency>
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
-            <version>3.15.0-GA</version>
+            <version>3.20.0-GA</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.netty</groupId>
@@ -349,6 +428,18 @@
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
