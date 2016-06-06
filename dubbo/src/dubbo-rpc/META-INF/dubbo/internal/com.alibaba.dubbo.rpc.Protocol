@@ -1,5 +1,8 @@
-http=com.alibaba.dubbo.rpc.protocol.http.HttpProtocol
-injvm=com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol
+registry=com.alibaba.dubbo.registry.integration.RegistryProtocol
+filter=com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper
+listener=com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper
+mock=com.alibaba.dubbo.rpc.support.MockProtocol
+dubbo=com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol
 hessian=com.alibaba.dubbo.rpc.protocol.hessian.HessianProtocol
 thrift=com.alibaba.dubbo.rpc.protocol.thrift.ThriftProtocol
-registry=com.alibaba.dubbo.registry.integration.RegistryProtocol
+injvm=com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol
