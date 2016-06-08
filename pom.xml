@@ -5,7 +5,8 @@
     <artifactId>dubbo-project</artifactId>
     <packaging>pom</packaging>
     <version>2.4.12</version>
-    
+
+    <!-- 模块 -->
     <name>dubbo</name>
     <modules>
         <module>dubbo</module>
@@ -14,5 +15,33 @@
         <module>dubbo-demo/dubbo-demo-provider</module>
         <module>dubbo-demo/dubbo-demo-consumer</module>
     </modules>
-    
+
+    <!-- 仓库 -->
+    <repositories>
+        <repository>
+            <id>oschina-mvn-repository</id>
+            <url>http://maven.oschina.net/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>dubbo-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+        </repository>
+        <repository>
+            <id>jsplite-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/jsplite/master/mvn-repository</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>oschina-plugin-repository</id>
+            <url>http://maven.oschina.net/content/groups/public</url>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
 </project>
