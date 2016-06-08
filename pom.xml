@@ -3,7 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.alibaba</groupId>
     <artifactId>dubbo-project</artifactId>
+    <packaging>pom</packaging>
     <version>2.4.12</version>
+    
+    <name>dubbo</name>
     <modules>
         <module>dubbo</module>
         <module>dubbo-admin</module>
@@ -11,4 +14,5 @@
         <module>dubbo-demo/dubbo-demo-provider</module>
         <module>dubbo-demo/dubbo-demo-consumer</module>
     </modules>
+    
 </project>
