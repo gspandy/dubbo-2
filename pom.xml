@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.alibaba</groupId>
     <artifactId>dubbo-project</artifactId>
-    <packaging>pom</packaging>
     <version>2.4.12</version>
+    <packaging>pom</packaging>
 
     <!-- 模块 -->
     <name>dubbo</name>
