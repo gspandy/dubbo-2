@@ -5,13 +5,6 @@
     <artifactId>dubbo</artifactId>
     <version>2.4.12</version>
 
-    <!-- 项目父pom.xml -->
-    <parent>
-        <groupId>com.alibaba</groupId>
-        <artifactId>dubbo-project</artifactId>
-        <version>2.4.12</version>
-    </parent>
-
     <organization>
         <name>Alibaba</name>
         <url>http://www.alibaba.com</url>
@@ -418,4 +411,28 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <!-- 仓库 -->
+    <repositories>
+        <repository>
+            <id>oschina-mvn-repository</id>
+            <url>http://maven.oschina.net/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>dubbo-mvn-github</id>
+            <url>https://raw.githubusercontent.com/lpn520/dubbo/master/mvn-repository</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>oschina-plugin-repository</id>
+            <url>http://maven.oschina.net/content/groups/public</url>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
