@@ -10,7 +10,6 @@
         <groupId>com.alibaba</groupId>
         <artifactId>dubbo-project</artifactId>
         <version>2.4.12</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <organization>
