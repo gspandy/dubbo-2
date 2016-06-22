@@ -27,9 +27,6 @@
         <resources>
             <resource>
                 <directory>src/dubbo-common</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -38,9 +35,6 @@
         <testResources>
             <testResource>
                 <directory>src-test/dubbo-common</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
